@@ -1,0 +1,41 @@
+.nl-service-grid-img
+{
+    min-height:366px;
+    height:366px;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.nl-service-grid-text-block
+{
+    padding: 35px 22px 0;
+    background: #fff;
+    min-height:366px;
+    height:366px;
+    min-height:366px;
+    height:366px;
+}
+.item-content
+{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.item-readmore a:after {
+    background: #c4273a;
+}
+.nl-service-grid-shadow
+{
+  box-shadow:0 0px 40px 0 rgb(40 40 40 / 10%);
+}
+
+.nl-about-title
+{
+margin-bottom:0px;
+
+}
+.leader-img
+{
+    border: 3px solid #585858;
+}
