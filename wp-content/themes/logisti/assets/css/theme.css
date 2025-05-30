@@ -2606,7 +2606,7 @@ ul.back {
   left: auto !important;
 }
 #pagetitle {
-  background-image: url(../images/page-title.jpg);
+  background-image: url(../../../../new-assets/blog_header.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4406,7 +4406,7 @@ h4.caption {
 	text-transform: none;
 -epub-text-transform: none;
 }
-}
+
 .cms-grid .item-title a:hover {
   color: #c4273a;
 }
@@ -4715,7 +4715,7 @@ h4.caption {
   padding: 0;
   font-size: 13px;
   color: rgba(40, 40, 40, 0.33);
-  font-family: ;
+  /* font-family: */
 }
 .nav-tabs.cms-tabs .nav-item a.active {
   color: #282828;
@@ -6287,7 +6287,7 @@ body .mfp-bottom-bar {
   font-family: 'Roboto', sans-serif;
 }
 .cms-newsletter .tnp-subscription form input.tnp-submit:hover, .cms-newsletter .tnp-subscription form input.tnp-submit:focus {
-  background-color: ;
+  /* background-color: ; */
   outline: none;
 }
 @media screen and (max-width: 991px) {
@@ -7497,10 +7497,10 @@ body .site-content {
   font-style: normal;
 }
 .ft-main-r, body {
-  font-family: ;
+  /* font-family: ; */
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: ;
+  /* font-family: ; */
 }
 .woocommerce #secondary .widget {
   background-color: transparent;
