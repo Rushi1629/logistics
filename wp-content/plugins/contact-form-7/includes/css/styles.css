@@ -170,3 +170,7 @@ form.submitting .wpcf7-spinner {
 .wpcf7-reflection > output[hidden] {
 	display: none;
 }
+
+.common-radius{
+	border-radius: 13px;
+}
