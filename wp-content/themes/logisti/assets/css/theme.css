@@ -774,19 +774,20 @@ ul + h2 + ol {
   display: block;
   width: 120px;
   height: 120px;
-  bottom: -30px;
+  bottom: -24px;
   /* background-color: #ffbf00; */
   background-color: #ffbf00;
   transition: all 1s ease 1.5s;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 .box-overlay-left img, .box-overlay-right img {
   mix-blend-mode: multiply;
 }
 .box-overlay-left:before {
-  left: -30px;
+  left: -60px;
 }
 .box-overlay-right:before {
-  right: -30px;
+  right: -60px;
 }
 @keyframes coverOut {
   0% {
@@ -8700,4 +8701,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .woocommerce-account .woocommerce-password-strength.bad {
   background-color: transparent;
   padding: 8px 0;
+}
+
+.site-footer .cms-logo-footer img{
+      max-height: inherit;
 }
