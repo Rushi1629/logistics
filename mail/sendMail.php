@@ -1,4 +1,5 @@
 <?php
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     
@@ -15,9 +16,9 @@
         $mail->SMTPDebug = 0;
         $mail->IsSMTP();
         $mail->SMTPAuth = true;
-        $mail->Host = "smtp.gmail.com";
-        $mail->Port = 587;
-        $mail->SMTPSecure = 'tls';
+        $mail->Host = "smtpout.secureserver.net";
+        $mail->Port = 465;
+        $mail->SMTPSecure = 'ssl';
         
         //havent read yet, but this made it work just fine
         $mail->SMTPOptions = array(
@@ -28,15 +29,16 @@
             )
         );
 
-        $mail->Username = 'avasarkarsintl@gmail.com';
+        $mail->Username = 'avasarkarsintl@avasarkars.com';
         $mail->Password = 'kfzfzuqjwxszhgur';
-        $mail->setFrom('avasarkarsintl@gmail.com', 'SONARI');
-        $mail->addReplyTo('avasarkarsintl@gmail.com', 'SONARI');
+        $mail->setFrom('avasarkarsintl@avasarkars.com', 'SONARI');
+        $mail->addReplyTo('avasarkarsintl@avasarkars.com', 'SONARI');
         $mail->addAddress('avasarkarsintl@gmail.com', 'SONARI');
         $mail->isHTML(true);
 
         $mail->Subject = "Avasarkar Form Data";
         $mail->Body = $mailBody;
+        // echo $mail->ErrorInfo;
 
         if ($mail->send()) {                    
             $response['status'] = "success";
@@ -46,12 +48,12 @@
             $response['status'] = "error";
             $response['message'] = "Something went wrong! Unable to send message!!!";
             echo json_encode($response, JSON_PRETTY_PRINT);
-            // echo $mail->ErrorInfo;
         }
     }
     else {
         $response['status'] = "error";
-        $response['message'] = "Failed while sending email!!!";
+        // $response['message'] = "Failed while sending email!!!";
+        $response['message'] = "Missing required POST data: 'sendMail' or 'mailBody'";
         echo json_encode($response, JSON_PRETTY_PRINT);
     }
 ?>
