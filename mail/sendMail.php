@@ -28,14 +28,14 @@
             )
         );
 
-        $mail->Username = 'sonaritraining@gmail.com';
-        $mail->Password = 'kyqpxtxrnmvbwlrq';
-        $mail->setFrom('sonaritraining@gmail.com', 'SONARI');
-        $mail->addReplyTo('sonaritraining@gmail.com', 'SONARI');
-        $mail->addAddress('sonaritraining@gmail.com', 'SONARI');
+        $mail->Username = 'avasarkarsintl@gmail.com';
+        $mail->Password = 'kfzfzuqjwxszhgur';
+        $mail->setFrom('avasarkarsintl@gmail.com', 'SONARI');
+        $mail->addReplyTo('avasarkarsintl@gmail.com', 'SONARI');
+        $mail->addAddress('avasarkarsintl@gmail.com', 'SONARI');
         $mail->isHTML(true);
 
-        $mail->Subject = "SONARI FORM DATA";
+        $mail->Subject = "Avasarkar Form Data";
         $mail->Body = $mailBody;
 
         if ($mail->send()) {                    
