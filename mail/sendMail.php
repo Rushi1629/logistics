@@ -1,4 +1,11 @@
 <?php
+
+    header("Access-Control-Allow-Origin: https://avasarkars.com"); // or your domain instead of *
+    header("Access-Control-Allow-Methods: POST");
+    header("Access-Control-Allow-Headers: Content-Type");
+    header("Content-Type: application/json");
+
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     
@@ -51,7 +58,8 @@
     }
     else {
         $response['status'] = "error";
-        $response['message'] = "Failed while sending email!!!";
+        // $response['message'] = "Failed while sending email!!!";
+        $response['message'] = "Missing required POST data: 'sendMail' or 'mailBody'";
         echo json_encode($response, JSON_PRETTY_PRINT);
     }
 ?>

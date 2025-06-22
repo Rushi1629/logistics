@@ -14,8 +14,10 @@ $(document).ready(function () {
             url: "https://avasarkars.com/mail/sendMail.php",
             type: "POST",
             dataType: 'json',
-            data: { mailBody, sendMail: true },
+            // data: { mailBody, sendMail: true },
+            data: { mailBody: mailBody, sendMail: "true" },
             success: function (response) {
+                debugger;
                 if (response.status === "success") {
                     showAlert("success", response?.message, "Good job!");
                     $("#contactForm")[0].reset();
