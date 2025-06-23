@@ -29,11 +29,11 @@
             )
         );
 
-        $mail->Username = 'avasarkarsintl@avasarkars.com';
+        $mail->Username = 'avasarkarsintl@gmail.com';
         $mail->Password = 'kfzfzuqjwxszhgur';
-        $mail->setFrom('avasarkarsintl@avasarkars.com', 'SONARI');
-        $mail->addReplyTo('avasarkarsintl@avasarkars.com', 'SONARI');
-        $mail->addAddress('avasarkarsintl@gmail.com', 'SONARI');
+        $mail->setFrom('avasarkarsintl@gmail.com', 'Avasarkars');
+        $mail->addReplyTo('avasarkarsintl@gmail.com', 'Avasarkars');
+        $mail->addAddress('avasarkarsintl@gmail.com', 'Avasarkars');
         $mail->isHTML(true);
 
         $mail->Subject = "Avasarkar Form Data";
